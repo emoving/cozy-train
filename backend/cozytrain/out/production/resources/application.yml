@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/train
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: false
+  freemarker:
+    cache: false
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
